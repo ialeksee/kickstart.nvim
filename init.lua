@@ -558,7 +558,7 @@ require('lazy').setup({
 
           --vim.o.guifont = 'Hack:h12'
           -- change scale
-          vim.g.neovide_scale_factor = 1.0
+          vim.g.neovide_scale_factor = 0.75
           local change_scale_factor = function(delta)
             vim.g.neovide_scale_factor = vim.g.neovide_scale_factor * delta
           end
@@ -638,7 +638,7 @@ require('lazy').setup({
       --  - settings (table): Override the default settings passed when initializing the server.
       --        For example, to see the options for `lua_ls`, you could go to: https://luals.github.io/wiki/settings/
       local servers = {
-        -- clangd = {},
+        clangd = {},
         -- gopls = {},
         -- pyright = {},
         -- rust_analyzer = {},
